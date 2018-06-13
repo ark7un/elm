@@ -5,14 +5,18 @@
 /*****************************/
 /* 标签整体背景色 */
 .tabs-style-iconbox nav {
-	background: rgba(255,255,255,0.3);
+       position:fixed;
+       width:100%;
+       top:0;left:0;
+       z-index:7;
+       background: rgba(0,128,128,0.7);
 }
 /* 标签横向排列控制|标签颜色渐变 */
 .tabs-style-iconbox nav ul li a {
 	overflow: visible;
 	padding: 2em 0;
 	line-height: 1;
-	-webkit-transition: color 0.5s;
+	-webkit-transition: color 0.7s;
 	transition: color 1s;
 }
 
@@ -27,8 +31,8 @@
 }
 /* 标签点击后背景色 */
 .tabs-style-iconbox nav ul li.tab-current a {
-	background: #da1d28;
-	box-shadow: -1px 0 0 #fff;
+	background: rgba(37,128,137,0.7);
+	box-shadow: -1px 0 0 #e5d800;
 }
 /* 倒三角颜色 */
 .tabs-style-iconbox nav ul li.tab-current a::after {
@@ -40,7 +44,7 @@
 	height: 0;
 	border: solid transparent;
 	border-width: 10px;
-	border-top-color: #da1d28;
+	border-top-color: rgba(0,128,128,0.7);
 	content: '';
 	pointer-events: none;
 }
