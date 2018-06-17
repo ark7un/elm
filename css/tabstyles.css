@@ -9,7 +9,8 @@
        width:100%;
        top:0;left:0;
        z-index:7;
-       background: rgba(0,128,128,0.7);
+       font-size: 0.85em;
+       background: rgba(47,79,79,0.9);
 }
 /* 标签横向排列控制|标签颜色渐变 */
 .tabs-style-iconbox nav ul li a {
@@ -25,14 +26,13 @@
 	font-weight: 700;
 	font-size: 1.2em;	
 }
-
 .tabs-style-iconbox nav ul li.tab-current {
 	z-index: 100;
 }
 /* 标签点击后背景色 */
 .tabs-style-iconbox nav ul li.tab-current a {
-	background: rgba(37,128,137,0.7);
-	box-shadow: -1px 0 0 #e5d800;
+	background: rgba(37,128,137,1);
+        box-shadow: 0px 0 0 #F0FFFF;
 }
 /* 倒三角颜色 */
 .tabs-style-iconbox nav ul li.tab-current a::after {
@@ -43,21 +43,21 @@
 	width: 0;
 	height: 0;
 	border: solid transparent;
-	border-width: 10px;
-	border-top-color: rgba(0,128,128,0.7);
+	border-width: 21px;
+	border-top-color: rgba(37,128,137,1);
 	content: '';
 	pointer-events: none;
 }
-/* 以下不知道有啥作用 */
+/* 餐单栏分割线颜色 */
 .tabs-style-iconbox nav ul li:first-child::before,
 .tabs-style-iconbox nav ul li::after {
 	position: absolute;
 	top: 20%;
 	right: 0;
-	z-index: -1;
+	z-index: 1;
 	width: 1px;
-	height: 60%;
-	background: rgba(0,0,0,0.07);
+	height: 70%;
+	background: rgba(60,179,113,0.7);
 	content: '';
 }
 

@@ -27,11 +27,11 @@ a {
 }
 /* 以下为鼠标放上时字体改变的颜色 */
 a:hover, a:focus {
-	color: #74777b;
+	color: #EE1289;
 }
-/* 以下字体高度、大小、字数的设置 */
+/* 以下字体高度、大小、字数、框高度的设置 */
 .container > section {
-	padding: 5.5em 0;
+	padding: 4.5em 0;
 	font-size: 1em;
 	min-height: 1%;
 }
