@@ -22,8 +22,20 @@
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 <link type="text/css" rel="stylesheet" href="css/player.css">
 <script src="js/modernizr.custom.js"></script>
-
-
+<script type="text/javascript">
+	function is_weixin(){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                return true;
+             } else {
+                return false;
+            }
+        }
+        
+        if (!is_weixin()) {
+        window.location.href = 'wxError.html';
+        }
+</script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <style type="text/css">.tb100x9 {display:none!important;display:none}
                        .content{width:80%;margin:200px auto;}
